@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"><head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.5.2/css/bootstrap.css}">
+    <script th:src="@{/webjars/jquery/3.5.1/jquery.min.js}"></script>
+
+</head>
+<body>
+<form class="form-controll" action="/post" method="post">
+   <b> 제목 : </b><input type="text" name="title"> <br>
+    <b>작성자 : </b><input type="text" name="writer"> <br>
+    <textarea name="content"></textarea><br>
+
+    <input type="submit" value="등록">
+</form>
+</body>
+</html>
